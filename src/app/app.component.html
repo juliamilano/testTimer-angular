@@ -4,9 +4,8 @@
   <app-timer [hourData]="hours" [minuteData]="minutes" [secondData]="seconds"></app-timer>
 
   <div class="button-wrap">
-   <button class="btn-big" (click)="startTimerSec()">Start</button>
+   <button class="btn-big btn-{{color}}" [disabled]="disablePause" (click)="startTimerSec()">{{startStop}}</button>
    <button class="btn-small btn-{{disablePause}}" (click)="pauseTimer()" [disabled]="disablePause" >||</button>
-   <button class="btn-big" (click)="stopTimerSec()">Stop</button>
    <button class="btn-big btn-stop" (click)="resetAll()">Reset</button>
   </div>
 </div>

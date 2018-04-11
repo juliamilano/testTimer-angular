@@ -54,7 +54,12 @@ button:focus {
 .btn-stop{
   background: #ff5973;
 }
-
+.btn-green{
+  background: #9bc393;
+}
+.btn-red{
+  background: #ff9c97;
+}
 .btn-small{
   height: 60px;
   width: 60px;
